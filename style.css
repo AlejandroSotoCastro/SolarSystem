@@ -1,0 +1,53 @@
+html {
+  background-color: rgb(5, 5, 83);
+}
+
+.planet {
+  width: 5px;
+  height: 5px;
+
+  transform-origin: 50% 50%;
+  animation: circle 5s infinite linear;
+}
+@keyframes circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.moon {
+  
+  width: 5px;
+  height: 5px;
+
+  transform-origin: 50% 50%;
+  animation: circleMoon 4s infinite linear;
+}
+@keyframes circleMoon {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* svg:hover { */
+/* transform: scale(2.25); */
+/* transition-duration: 2.5s; */
+/* } */
+
+.star-touch-target {
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
